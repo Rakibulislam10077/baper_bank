@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1 id="islam">Alhamdulillah for everything alhamdulillah</h1>
+        </header>
+        <main id="main_container">
+            <section id="first_section">
+
+                <h1 id="changed">My Awesome DOM de re baba</h1>
+                <ul id="append_text">
+                    <li>jalali set</li>
+                    <li>Shafayet</li>
+                    <li>bonobashi</li>
+                    <li>DOM de re baba</li>
+                </ul>
+            </section>
+            <section id="place_container" class="hablu">
+                <h1 id="bondu">bondu ebong boro vai</h1>
+                <ul>
+                    <li>rakibul islam</li>
+                    <li>jaker hossain</li>
+                    <li>bahadur vai</li>
+                    <li>shorif vai</li>
+                </ul>
+            </section>
+            <section id="under_list" class="habir mar jir biya">
+                <!-- <h1 id="places">Places I like to visit</h1> -->
+                <ul>
+                    <li>Soondarban</li>
+                    <li>bandorban</li>
+                    <li>Kataban</li>
+                    <li>Shalban</li>
+                    <li class="important_places">bandorban</li>
+                    <li class="important_places">;alkjgk</li>
+                    <li class="important_places">ffjsfjljflsjf</li>
+                    <li class="important_places">sdjiuret</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="script/dom.js"></script>
+    <script src="script/styleinjs.js"></script>
+    <script src="script/append.js"></script>
+    <script>
+        let domde = document.getElementsByTagName('h1');
+        for (let derebaba of domde) {
+            // console.log(derebaba);
+        }
+
+        let liCollection = document.getElementsByTagName('li');
+        for (let list of liCollection) {
+            // console.log(list);
+        }
+
+        let places = document.getElementsByClassName('important_places');
+        for (let place of places) {
+            // console.log(place);
+        }
+
+        let alhamdulillah = document.getElementById('changed');
+        alhamdulillah.innerText = 'Alhamdulillah for everything';
+
+
+
+        let innerSectionList = document.querySelectorAll('.third_list li');
+        for (let list of innerSectionList) {
+            // console.log(list);
+        }
+
+
+
+    </script>
+</body>
+
+</html>
